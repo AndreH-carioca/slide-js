@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="A draggable image strip layout with a content preview powered by Draggabilly and TweenMax." />
+	<meta name="keywords"
+		content="draggable, images, horizontal, layout, flexbox, grid, css, tweenmax, draggabilly, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="stylesheet" href="/favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/ugp0unb.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<title>Together</title>
+</head>
+
+<body class="loading">
+	<main>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">São alguns das nossas fotinhas juntos 💙❤️ </h1>
+			</div>
+			<h3 class="frame__subtitle">Adoro a gente junto ❤️</h3>
+			<div class="frame__indicator"></div>
+		</div>
+		<audio controls autoplay>
+			<source src="Tim Bernardes - BB (Garupa de Moto Amarela) (Audio Oficial + Lyrics).mp3" type="audio/ogg">
+			<source src="Tim Bernardes - BB (Garupa de Moto Amarela) (Audio Oficial + Lyrics).mp3" type="audio/mpeg">
+		</audio>
+		<div class="strip-outer">
+			<div class="strip-inner">
+				<div class="draggable"></div>
+				<div class="strip">
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img1.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>01</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-m">
+							<div class="img-inner" style="background-image:url('img/img2.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>02</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-xl">
+							<div class="img-inner" style="background-image:url('img/img10.JPEG');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>03</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-l">
+							<div class="img-inner" style="background-image:url('img/img4.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>04</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img5.JPG');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>05</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-m">
+							<div class="img-inner" style="background-image:url('img/img6.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>06</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img7.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>07</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-l">
+							<div class="img-inner" style="background-image:url('img/img8.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>08</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img9.JPEG');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>09</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer">
+							<div class="img-inner" style="background-image:url('img/img3.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>10</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img11.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>11</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-xl">
+							<div class="img-inner" style="background-image:url('img/img12.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>12</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img13.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>13</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-l">
+							<div class="img-inner" style="background-image:url('img/img14.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>14</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img15.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>15</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-l">
+							<div class="img-inner" style="background-image:url('img/img16.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>16</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-m">
+							<div class="img-inner" style="background-image:url('img/img17.JPEG');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>17</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer">
+							<div class="img-inner" style="background-image:url('img/img18.jpeg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>18</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+					<div class="strip__item">
+						<div class="img-outer img-outer--size-s">
+							<div class="img-inner" style="background-image:url('img/img19.jpg');"></div>
+						</div>
+						<span class="strip__item-number"><a class="strip__item-link"><span>19</span></a><span
+								class="strip__item-plus"></span></span>
+					</div>
+				</div><!--/strip-->
+			</div><!--/strip-inner-->
+			<div class="strip-cover">
+				<h2 class="strip-cover__title">Essas são</h2>
+				<span class="strip-cover__subtitle">As nossas fotos</span>
+			</div>
+		</div><!--/strip-outer-->
+	</main>
+	<div class="cursor">
+		<div class="cursor__inner cursor__inner--circle">
+			<div class="cursor__side cursor__side--left"></div>
+			<div class="cursor__side cursor__side--right"></div>
+		</div>
+	</div>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/draggabilly.pkgd.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script>
+		// Preload all the images in the page
+		imagesLoaded(document.querySelectorAll('.img-inner'), { background: true }, () => document.body.classList.remove('loading'));
+	</script>
+</body>
+
+</html>
